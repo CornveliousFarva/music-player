@@ -15,3 +15,44 @@ body{
   justify-content: center;
   margin: 0 
 }
+
+.music-container{
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 20px 20px 0 rgba(250, 168, 168, 0.7);
+    display: flex;
+    padding: 20px 30px;
+    position: relative;
+    margin: 100px 0;
+    z-index: 10;
+}
+
+.img-container{
+    position: relative;
+    width: 110px;
+}
+
+.img-container img{
+    border-radius: 50%;
+    object-fit: cover;
+    height: 110px;
+    width: inherit;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: rotate 3s linear infinite;
+    animation-play-state: paused;
+}
+
+.music-container.play.img-container img{
+    animation-play-state: running;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+       transform: rotate(360deg) 
+    }
+}
