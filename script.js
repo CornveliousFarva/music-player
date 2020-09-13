@@ -10,3 +10,16 @@ const cover = document.getElementById('cover');
 
 //Song Titles
 const songs = ['hey', 'summer', 'ukelele']
+
+// Keep Track of Song
+let songIndex = 2;
+
+//Initially Load Song Details Into DOM
+loadSong(songs[songIndex]);
+
+//Update Song Details
+function loadSong(song){
+    title.innerText = song;
+    audio.src = `music/${song}.mp3`;
+    cover.src = `images/${song}.jpg`;
+}
