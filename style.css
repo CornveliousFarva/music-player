@@ -32,6 +32,18 @@ body{
     width: 110px;
 }
 
+.img-container::after{
+    content: '';
+    background-color: #ddd;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    translate: translate(-50%, 50%);
+}
+
 .img-container img{
     border-radius: 50%;
     object-fit: cover;
