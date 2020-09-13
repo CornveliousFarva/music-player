@@ -94,5 +94,11 @@ playBtn.addEventListener('click', () => {
     }
 });
 
+//Change Song
+prevBtn.addEventListener('click', prevSong);
+nextBtn.addEventListener('click', nextSong);
+
+
+
 
 
